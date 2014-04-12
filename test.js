@@ -11,9 +11,6 @@ test('midpoint', function(t){
   t.end()
 })
 
-var t = require('../index'),
-  should = require('should')
-
 describe('midpoint', function(){
   it('should return the halfway point of a horizontal line starting off 0,0', function(done){
     var line = t.linestring([[0,0], [10,0]])

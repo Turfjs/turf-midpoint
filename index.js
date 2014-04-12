@@ -1,11 +1,11 @@
 // http://cs.selu.edu/~rbyrd/math/midpoint/
 // ((x1+x2)/2), ((y1+y2)/2)
-var t = {}
-var point = require('./point')
-t.point = point
+var point = require('turf-point')
 
 module.exports = function(point1, point2, done) {
-  if(point1 === null || point2 === null || point1 && point2 === null) throw new Error('Less than two points passed.')
+  if(point1 === null || point2 === null || point1 && point2 === null){
+    return new Error('Less than two points passed.')
+  }
 
   var x1 = point1.geometry.coordinates[0];
   var x2 = point2.geometry.coordinates[0];
@@ -17,7 +17,7 @@ module.exports = function(point1, point2, done) {
   var y3 = y1 + y2;
   var midY = y3/2;
 
-  var midpoint = t.point(midX, midY);
+  var midpoint = point(midX, midY);
 
-  done(null, midpoint)
+  return midpoint
 }
