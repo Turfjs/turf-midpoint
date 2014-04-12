@@ -1,0 +1,29 @@
+{
+  "name": "turf-midpoint",
+  "version": "0.1.0",
+  "description": "turf midpoint module",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/morganherlocker/turf-midpoint.git"
+  },
+  "keywords": [
+    "turf",
+    "midpoint",
+    "bisect",
+    "geojson",
+    "line"
+  ],
+  "author": "morganherlocker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/morganherlocker/turf-midpoint/issues"
+  },
+  "homepage": "https://github.com/morganherlocker/turf-midpoint",
+  "devDependencies": {
+    "tape": "^2.12.3"
+  }
+}
