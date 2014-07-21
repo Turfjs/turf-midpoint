@@ -24,10 +24,10 @@
   },
   "homepage": "https://github.com/morganherlocker/turf-midpoint",
   "devDependencies": {
-    "tape": "^2.12.3",
-    "turf-linestring": "^0.1.0"
+    "tape": "^2.13.4",
+    "turf-linestring": "^0.1.1"
   },
   "dependencies": {
-    "turf-point": "^0.1.0"
+    "turf-point": "^0.1.1"
   }
 }
