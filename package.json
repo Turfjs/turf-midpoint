@@ -25,8 +25,7 @@
   "homepage": "https://github.com/morganherlocker/turf-midpoint",
   "devDependencies": {
     "benchmark": "^1.0.0",
-    "tape": "^3.0.3",
-    "turf-linestring": "^1.0.0"
+    "tape": "^3.0.3"
   },
   "dependencies": {
     "turf-point": "^1.2.0"
