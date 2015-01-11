@@ -3,7 +3,7 @@
 var point = require('turf-point');
 
 module.exports = function(point1, point2) {
-  if(point1 === null || point2 === null || point1 && point2 === null){
+  if(point1 === null || point2 === null){
     return new Error('Less than two points passed.');
   }
 
