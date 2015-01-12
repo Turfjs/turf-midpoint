@@ -2,6 +2,21 @@
 // ((x1+x2)/2), ((y1+y2)/2)
 var point = require('turf-point');
 
+/**
+ * Takes two point features and returns a point between the two.
+ *
+ * @module turf/midpoint
+ * @param {Point} a
+ * @param {Point} b
+ * @return {Point} a point between the two
+ * @example
+ * var pt1 = turf.point(0,0)
+ * var pt2 = turf.point(10, 0)
+ * var midpointed = turf.midpoint(pt1, pt2)
+ * var features = turf.featurecollection([
+ *  pt1, pt2, midpointed]);
+ * //=features
+ */
 module.exports = function(point1, point2) {
   if(point1 === null || point2 === null){
     return new Error('Less than two points passed.');
