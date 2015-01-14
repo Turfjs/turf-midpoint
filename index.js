@@ -18,8 +18,8 @@ var point = require('turf-point');
  * //=features
  */
 module.exports = function(point1, point2) {
-  if(point1 === null || point2 === null){
-    return new Error('Less than two points passed.');
+  if (point1 === null || point2 === null){
+    throw new Error('Less than two points passed.');
   }
 
   var x1 = point1.geometry.coordinates[0];
@@ -35,4 +35,4 @@ module.exports = function(point1, point2) {
   var midpoint = point(midX, midY);
 
   return midpoint;
-}
+};
