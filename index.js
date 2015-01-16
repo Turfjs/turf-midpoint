@@ -10,9 +10,14 @@ var point = require('turf-point');
  * @param {Point} pt2 - second point
  * @return {Point} a point between the two
  * @example
- * var pt1 = turf.point(0,0)
- * var pt2 = turf.point(10, 0)
- * var midpointed = turf.midpoint(pt1, pt2)
+ * var pt1 = turf.point(144.834823, -37.771257);
+ * pt1.properties['marker-color'] = "#00f";
+ * var pt2 = turf.point(145.14244, -37.830937);
+ * pt2.properties['marker-color'] = "#00f";
+ *
+ * var midpointed = turf.midpoint(pt1, pt2);
+ * midpointed.properties['marker-color'] = "#f00";
+ *
  * var features = turf.featurecollection([
  *  pt1, pt2, midpointed]);
  *
