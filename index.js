@@ -38,7 +38,5 @@ module.exports = function(point1, point2) {
   var y3 = y1 + y2;
   var midY = y3/2;
 
-  var midpoint = point(midX, midY);
-
-  return midpoint;
+  return point([midX, midY]);
 };

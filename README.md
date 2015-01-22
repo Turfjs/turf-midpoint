@@ -1,40 +1,45 @@
-turf-midpoint
-=============
-[![Build Status](https://travis-ci.org/Turfjs/turf-midpoint.svg?branch=master)](https://travis-ci.org/Turfjs/turf-midpoint)
+# turf-midpoint
 
-Takes two point features and returns the mid point.
+[![build status](https://secure.travis-ci.org/Turfjs/turf-midpoint.png)](http://travis-ci.org/Turfjs/turf-midpoint)
 
-###Install
+turf midpoint module
+
+
+### `turf.midpoint(a, b)`
+
+Takes two point features and returns a point between the two.
+
+
+### Parameters
+
+| parameter | type  | description |
+| --------- | ----- | ----------- |
+| `a`       | Point |             |
+| `b`       | Point |             |
+
+
+### Example
+
+```js
+var pt1 = turf.point([0,0]);
+var pt2 = turf.point([10, 0]);
+var midpointed = turf.midpoint(pt1, pt2);
+var features = turf.featurecollection([
+ pt1, pt2, midpointed]);
+//=features
+```
+
+## Installation
+
+Requires [nodejs](http://nodejs.org/).
 
 ```sh
-npm install turf-midpoint
+$ npm install turf-midpoint
 ```
 
-###Parameters
+## Tests
 
-|name|description|
-|---|---|
-|pt1|a point|
-|pt2|a point|
-
-###Usage
-
-```js
-midpoint(pt1, pt2)
-```
-
-###Example
-
-
-```js
-var midpoint = require('turf-midpoint')
-var point = require('turf-point')
-
-var pt1 = point(0,0)
-var pt2 = point(10, 0)
-
-var midpointed = midpoint(pt1, pt2)
-
-console.log(midpointed)
+```sh
+$ npm test
 ```
 
