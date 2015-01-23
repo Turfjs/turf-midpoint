@@ -16,7 +16,7 @@ var point = require('turf-point');
  * pt2.properties['marker-color'] = '#00f';
  *
  * var midpointed = turf.midpoint(pt1, pt2);
- * midpointed.properties['marker-color'] = '#f00;
+ * midpointed.properties['marker-color'] = '#f00';
  *
  * var result = turf.featurecollection([
  *  pt1, pt2, midpointed]);
