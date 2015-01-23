@@ -6,22 +6,22 @@ var point = require('turf-point');
  * Takes two {@link Point} features and returns a Point midway between the two.
  *
  * @module turf/midpoint
- * @param {Point} pt1 - first point
- * @param {Point} pt2 - second point
+ * @param {Point} pt1 first point
+ * @param {Point} pt2 second point
  * @return {Point} a point between the two
  * @example
  * var pt1 = turf.point([144.834823, -37.771257]);
- * pt1.properties['marker-color'] = "#00f";
+ * pt1.properties['marker-color'] = '#00f';
  * var pt2 = turf.point([145.14244, -37.830937]);
- * pt2.properties['marker-color'] = "#00f";
+ * pt2.properties['marker-color'] = '#00f';
  *
  * var midpointed = turf.midpoint(pt1, pt2);
- * midpointed.properties['marker-color'] = "#f00";
+ * midpointed.properties['marker-color'] = '#f00;
  *
- * var features = turf.featurecollection([
+ * var result = turf.featurecollection([
  *  pt1, pt2, midpointed]);
  *
- * //=features
+ * //=result
  */
 module.exports = function(point1, point2) {
   if (point1 === null || point2 === null){
