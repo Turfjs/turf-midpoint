@@ -3,13 +3,13 @@
 var point = require('turf-point');
 
 /**
- * Takes two {@link Point} features and returns a Point midway between the two.
+ * Takes two points and returns a point midway between them.
  *
  * @module turf/midpoint
  * @category measurement
- * @param {Point} pt1 first point
- * @param {Point} pt2 second point
- * @return {Point} a point between the two
+ * @param {Feature<Point>} pt1 first point
+ * @param {Feature<Point>} pt2 second point
+ * @return {Feature<Point>} a point midway between `pt1` and `pt2`
  * @example
  * var pt1 = {
  *   "type": "Feature",
