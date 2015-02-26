@@ -3,7 +3,7 @@
 var point = require('turf-point');
 
 /**
- * Takes two points and returns a point midway between them.
+ * Takes two {@link Point|points} and returns a point midway between them.
  *
  * @module turf/midpoint
  * @category measurement
