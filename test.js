@@ -57,5 +57,13 @@ test('midpoint', function(t){
    };
   t.deepEqual(actualMidPoint, expectedMidPoint, 'should return the halfway point shown in the README example.');
 
+  var pt1 = {"type":"Feature","geometry":{"type":"Point","coordinates":["-86.48575050088414","39.16626837798435"]},"properties":{}};
+  var pt2 = {"type":"Feature","geometry":{"type":"Point","coordinates":["-86.5348237161408" ,"39.16786172034318"]},"properties":{}};
+  var expectedMidPoint = {"type":"Feature","geometry":{"type":"Point","coordinates":[ -86.51028710851247, 39.16706504916377 ]},"properties":{}};
+  var actualMidPoint = midpoint(pt1, pt2);
+  t.deepEqual(actualMidPoint, expectedMidPoint, 'should support quoted coordinate values');
+
+
+
   t.end();
 });
