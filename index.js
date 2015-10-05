@@ -49,9 +49,9 @@ module.exports = function(point1, point2) {
   var y1 = point1.geometry.coordinates[1];
   var y2 = point2.geometry.coordinates[1];
 
-  var x3 = x1 + x2;
+  var x3 = Number(x1) + Number(x2);
   var midX = x3/2;
-  var y3 = y1 + y2;
+  var y3 = Number(y1) + Number(y2);
   var midY = y3/2;
 
   return point([midX, midY]);
